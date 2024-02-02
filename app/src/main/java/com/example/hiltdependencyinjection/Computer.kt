@@ -3,7 +3,7 @@ package com.example.hiltdependencyinjection
 import android.util.Log
 import javax.inject.Inject
 
-class Computer @Inject constructor(val ram: Ram,val harDisk: HarDisk) {
+class Computer @Inject constructor(private val ram: Ram, private val harDisk: HarDisk) {
 
     fun getComputer(){
         ram.getRam()
